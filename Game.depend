@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1580376122 source:d:\9raya and stuff\medtech\sem 2\iss project\game\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"player.h"
+
+1580211129 d:\9raya and stuff\medtech\sem 2\iss project\game\player.h
+
+1580211129 source:d:\9raya and stuff\medtech\sem 2\iss project\game\player.c
+	"player.h"
+
+1580376019 source:d:\9raya and stuff\medtech\sem 2\iss project\game\scoretable.c
+	"player.h"
+	"scoretable.h"
+
+1580211129 d:\9raya and stuff\medtech\sem 2\iss project\game\scoretable.h
+
