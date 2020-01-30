@@ -10,6 +10,6 @@ struct Characters{
 void read_players(Player Players[5]);
 void sort_players(Player Players[5]);
 void display_players(Player Players[5]);
-void save_score(Player Players[5]);
+void scoretable(Player Players[5]);
 
 #endif // SCORETABLE_H_INCLUDED

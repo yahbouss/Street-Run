@@ -16,7 +16,7 @@ void sort_players(Player Players[5])
      for(int j=0;j<5;j++)
         for (int i=0;i<(5-j);i++)
         {
-            if(Players[i].Score>Players[i+1].Score)
+            if(Players[i].Score<Players[i+1].Score)
             {
             //score swap
                 int Temp= Players[i].Score;
@@ -41,18 +41,9 @@ void display_players(Player Players[5])
     }
 }
 
-void save_score(Player Players[5])
-
-{
-    FILE* f=fopen("D:\\9raya and stuff\\MedTech\\Sem 2\\ISS Project\\Game\\score.txt","a");
-     if (f==NULL){
-        printf("error");
-        exit(0);
-    }
-    for (int i=0;i<5;i++)
-    {
-        fprintf(score,"Player's name is %s : ",Players[i].Name);
-        fprintf(score,"Player's Score %i \n",Players[i].Score);
-
-    }
+void score_table(Player Players[5]){
+    read_players(Players);
+    sort_players(Players);
+    display_players(Players);
 }
+

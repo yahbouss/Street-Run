@@ -5,9 +5,7 @@
 
 int main(){
     Player Players[5];
-    read_players(Players);
-    sort_players(Players);
-    display_players(Players);
+    score_table(Players);
 
 
     FILE* score=fopen("D:\\9raya and stuff\\MedTech\\Sem 2\\ISS Project\\Game\\score.txt","a");
@@ -18,9 +16,9 @@ int main(){
     for (int i=0;i<5;i++)
     {
         fprintf(score,"Player's name is %s : ",Players[i].Name);
-        fprintf(score,"Player's Score %i \n",Players[i].Score);
+        fprintf(score,"              Player's Score %i \n",Players[i].Score);
 
     }
-fclose(score);
+    fclose(score);
     return 0;
 }
